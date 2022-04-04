@@ -3507,12 +3507,16 @@ class PlayState extends MusicBeatState
 				{
 					case 0:
 						animToPlay = 'singLEFT';
+						camFollow.x += 15;
 					case 1:
 						animToPlay = 'singDOWN';
+						camFollow.y += 15;
 					case 2:
 						animToPlay = 'singUP';
+						camFollow.y += 15;
 					case 3:
 						animToPlay = 'singRIGHT';
+						camFollow.x += 15;
 				}
 
 				if(note.noteType == 'GF Sing') {
