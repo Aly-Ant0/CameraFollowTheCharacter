@@ -3788,6 +3788,18 @@ class PlayState extends MusicBeatState
 	override function stepHit()
 	{
 		super.stepHit();
+			if (curSong == 'Blammed')
+			{
+				switch(curStep)
+				{
+          case 412:
+            FlxTween.tween(FlxG.camera, {zoom: 1}, 0.7, {ease: FlxEase.quadInOut});
+          case 414:
+            FlxTween.tween(FlxG.camera, {zoom: 2}, 0.7, {ease: FlxEase.quadInOut});
+          case 415:
+            FlxTween.tween(FlxG.camera, {zoom: 0}, 0.7, {ease: FlxBase.quadInOut});
+				}
+			}
 		if (FlxG.sound.music.time > Conductor.songPosition + 20 || FlxG.sound.music.time < Conductor.songPosition - 20)
 		{
 			resyncVocals();
