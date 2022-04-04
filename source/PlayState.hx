@@ -14,7 +14,6 @@ import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.FlxSubState;
-import flixel.FlxBase;
 import flixel.addons.display.FlxGridOverlay;
 import flixel.addons.effects.FlxTrail;
 import flixel.addons.effects.FlxTrailArea;
@@ -3794,11 +3793,11 @@ class PlayState extends MusicBeatState
 				switch(curStep)
 				{
           case 412:
-            FlxTween.tween(FlxG.camera, {zoom: 1}, 0.7, {ease: FlxEase.quadInOut});
+            FlxTween.tween(FlxG.camera, {zoom: 1}, 0.7});
           case 414:
-            FlxTween.tween(FlxG.camera, {zoom: 2}, 0.7, {ease: FlxEase.quadInOut});
+            FlxTween.tween(FlxG.camera, {zoom: 2}, 0.7});
           case 415:
-            FlxTween.tween(FlxG.camera, {zoom: 0}, 0.7, {ease: FlxBase.quadInOut});
+            FlxTween.tween(FlxG.camera, {zoom: 0}, 0.7});
 				}
 			}
 		if (FlxG.sound.music.time > Conductor.songPosition + 20 || FlxG.sound.music.time < Conductor.songPosition - 20)
