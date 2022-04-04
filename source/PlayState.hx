@@ -3793,11 +3793,11 @@ class PlayState extends MusicBeatState
 				switch(curStep)
 				{
           case 412:
-            FlxTween.tween(FlxG.camera, {zoom: 1}, 0.7});
+            FlxTween.tween(FlxG.camera, {zoom: 1}, 0.7);
           case 414:
-            FlxTween.tween(FlxG.camera, {zoom: 2}, 0.7});
+            FlxTween.tween(FlxG.camera, {zoom: 2}, 0.7);
           case 415:
-            FlxTween.tween(FlxG.camera, {zoom: 0}, 0.7});
+            FlxTween.tween(FlxG.camera, {zoom: 0}, 0.7);
 				}
 			}
 		if (FlxG.sound.music.time > Conductor.songPosition + 20 || FlxG.sound.music.time < Conductor.songPosition - 20)
