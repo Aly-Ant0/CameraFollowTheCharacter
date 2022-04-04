@@ -2275,16 +2275,16 @@ class PlayState extends MusicBeatState
 						{
 							case 0:
 								animToPlay = 'singLEFT';
-								camFollow -= 15;
+								camFollow.x -= 15;
 							case 1:
 								animToPlay = 'singDOWN';
-								camFollow += 15;
+								camFollow.y += 15;
 							case 2:
 								animToPlay = 'singUP';
-								camFollow -= 15;
+								camFollow.y -= 15;
 							case 3:
 								animToPlay = 'singRIGHT';
-								camFollow += 15;
+								camFollow.x += 15;
 						}
 						if(daNote.noteType == 'GF Sing') {
 							gf.playAnim(animToPlay + altAnim, true);
