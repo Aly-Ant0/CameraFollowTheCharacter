@@ -3793,10 +3793,9 @@ class PlayState extends MusicBeatState
 				switch(curStep)
 				{
           case 412:
-          FlxG.camera.zoom != 1);
-        FlxTween.tween(FlxG.camera, {zoom: 1}, (Conductor.stepCrochet * 4 / 1000), {ease: FlxEase.elasticInOut}, onComplete:
+        FlxTween.tween(FlxG.camera, {zoom: 1}, {ease: FlxEase.elasticInOut}, onComplete);
           case 414:
-				FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 1.5, 0.7, {ease: quadInOut});
+				FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 1.5, {ease: quadInOut}, onComplete);
           case 415:
 				FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 0.9);
 				}
