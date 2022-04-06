@@ -3822,6 +3822,14 @@ class PlayState extends MusicBeatState
 	{
 		super.beatHit();
 
+        if(curBeat == 102 && curSong == 'blammed')
+        {
+            defaultCamZoom = 1;
+        }
+        if(curBeat == 103 && curSong == 'trespass')
+        {
+            defaultCamZoom = 1.3;
+        }
 		if(lastBeatHit >= curBeat) {
 			trace('BEAT HIT: ' + curBeat + ', LAST HIT: ' + lastBeatHit);
 			return;
