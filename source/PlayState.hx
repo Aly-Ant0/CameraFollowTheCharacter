@@ -3788,18 +3788,7 @@ class PlayState extends MusicBeatState
 	override function stepHit()
 	{
 		super.stepHit();
-			if (curSong == 'Blammed')
-			{
-				switch(curStep)
-				{
-          case 412:
-        FlxTween.tween(FlxG.camera, {zoom: 1}, {ease: FlxEase.elasticInOut}, onComplete);
-          case 414:
-				FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 1.5, {ease: quadInOut}, onComplete);
-          case 415:
-				FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 0.9);
-				}
-			}
+
 		if (FlxG.sound.music.time > Conductor.songPosition + 20 || FlxG.sound.music.time < Conductor.songPosition - 20)
 		{
 			resyncVocals();
@@ -3826,7 +3815,7 @@ class PlayState extends MusicBeatState
         {
             defaultCamZoom = 1;
         }
-        if(curBeat == 103 && curSong == 'trespass')
+        if(curBeat == 103 && curSong == 'blammed')
         {
             defaultCamZoom = 1.3;
         }
