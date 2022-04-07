@@ -3789,21 +3789,27 @@ class PlayState extends MusicBeatState
 	{
 		super.stepHit();
 
+		if (FlxG.sound.music.time > Conductor.songPosition + 20 || FlxG.sound.music.time < Conductor.songPosition - 20)
+		{
+			resyncVocals();
+		}
+
+		if (curSong == 'Blammed' && curStep >= 440 && curStep <= 444)
+		{
+			dad.playAnim('idle', false);
+		}
+
 		if (curSong == "Blammed")
 		{
 			switch (curStep)
 			{
 				case 440:
-					FlxTween.tween(FlxTween.tween.FlxG.camera, {zoom: 1.2}, 0.3, {ease: FlxEase.quadInOut, onComplete: function (tween:FlxTween; {defaultCamZoom = 1.2;}}));
-				case 44:
-					FlxTween.tween(FlxTween.tween.FlxG.camera, {zoom: 1.5}, 0.3, {ease: FlxEase.quadInOut, onComplete: function (tween:FlxTween); {defaultCamZoom = 1.5;}}));
+					tween.push(FlxTween.tween(FlxG.camera, {zoom: 1.2}, 0.3, {ease: FlxEase.quadInOut, onComplete: function (tween:FlxTween, {defaultCamZoom = 1.2;}}));
+				case 442:
+					tween.push(FlxTween.tween(FlxG.camera, {zoom: 1.5}, 0.3, {ease: FlxEase.quadInOut, onComplete: function (tween:FlxTween), {defaultCamZoom = 1.5;}}));
 				case 444:
-					FlxTween.tween(FlxTween.tween.FlxG.camera, {zoom: 0.9}, 0.3, {ease: FlxEase.quadInOut, onComplete: function (tween:FlxTween); {defaultCamZoom = 0.9;}}));
+					tween.push(FlxTween.tween(FlxG.camera, {zoom: 0.9}, 0.3, {ease: FlxEase.quadInOut, onComplete: function (tween:FlxTween), {defaultCamZoom = 0.9;}}));
 			}
-		}
-		if (FlxG.sound.music.time > Conductor.songPosition + 20 || FlxG.sound.music.time < Conductor.songPosition - 20)
-		{
-			resyncVocals();
 		}
 
 		if(curStep == lastStepHit) {
