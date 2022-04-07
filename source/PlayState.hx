@@ -3804,11 +3804,11 @@ class PlayState extends MusicBeatState
 			switch (curStep)
 			{
 				case 440:
-					tween.push(FlxTween.tween(FlxG.camera, {zoom: 1.2}, 0.3, {ease: FlxEase.quadInOut, onComplete: function (tween:FlxTween, {defaultCamZoom = 1.2;}}));
+					defaultCamZoom = 1.2
 				case 442:
-					tween.push(FlxTween.tween(FlxG.camera, {zoom: 1.5}, 0.3, {ease: FlxEase.quadInOut, onComplete: function (tween:FlxTween), {defaultCamZoom = 1.5;}}));
+					defaultCamZoom = 1.7;
 				case 444:
-					tween.push(FlxTween.tween(FlxG.camera, {zoom: 0.9}, 0.3, {ease: FlxEase.quadInOut, onComplete: function (tween:FlxTween), {defaultCamZoom = 0.9;}}));
+					defaultCamZoom = 0.9;
 			}
 		}
 
@@ -3828,15 +3828,6 @@ class PlayState extends MusicBeatState
 	override function beatHit()
 	{
 		super.beatHit();
-
-        if(curBeat == 102 && curSong == 'blammed')
-        {
-            defaultCamZoom = 1;
-        }
-        if(curBeat == 103 && curSong == 'blammed')
-        {
-            defaultCamZoom = 1.3;
-        }
 		if(lastBeatHit >= curBeat) {
 			trace('BEAT HIT: ' + curBeat + ', LAST HIT: ' + lastBeatHit);
 			return;
