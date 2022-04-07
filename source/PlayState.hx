@@ -25,7 +25,7 @@ import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.math.FlxMath;
 import flixel.math.FlxPoint;
-import flixel.math.FlxRect;
+import flixel.math.FlxRect; 
 import flixel.system.FlxSound;
 import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
@@ -3804,7 +3804,7 @@ class PlayState extends MusicBeatState
 			switch (curStep)
 			{
         case 412:
-          defaultCamZoom = 1.22;
+          defaultCamZoom = 1.29;
         case 414:
           defaultCamZoom = 1.45;
         case 415:
@@ -3814,13 +3814,13 @@ class PlayState extends MusicBeatState
 				case 444:
 					defaultCamZoom = 1.05;
 				case 476:
-          defaultCamZoom = 1.22;
+          defaultCamZoom = 1.32;
         case 478:
-          defaultCamZoom = 1.45;
-        case 479:
+          defaultCamZoom = 1.5;
+        case 480:
           defaultCamZoom = 1.05;
         case 504:
-          defaultCamZoom = 1.32;
+          defaultCamZoom = 1.4;
         case 506:
           defaultCamZoom = 1.05;
 			}
