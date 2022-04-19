@@ -3793,27 +3793,28 @@ class PlayState extends MusicBeatState
 		{
 			resyncVocals();
 		}
-
-		if (curSong == 'Blammed' && curStep >= 440 && curStep <= 444)
-		{
-			dad.playAnim('idle', false);
-		}
-
+/*case 412:
+            FlxTween.tween(FlxG.camera, {zoom: 1}, 0.7, {ease: FlxEase.elasticInOut});
+          case 414:
+            FlxTween.tween(FlxG.camera, {zoom: 2}, 0.7, {ease: FlxEase.quadInOut});
+          case 415:
+            FlxTween.tween(FlxG.camera, {zoom: 0}, 0.7, {ease: FlxEase.quadInOut});*/
+ 
 		if (curSong == "Blammed")
 		{
 			switch (curStep)
 			{
-        case 412:
-          defaultCamZoom = 1.27;
-        case 414:
-          defaultCamZoom = 1.69;
-        case 415:
+        case 412: //turno do boca na pika - zoom 1.27
+            FlxTween.tween(FlxG.camera, {zoom: 1.27}, 0.5, {ease: FlxEase.elasticInOut});
+        case 414:  //turno da pika dnv 1.69
+            FlxTween.tween(FlxG.camera, {zoom: 1.69}, 0.5, {ease: FlxEase.elasticInOut});
+        case 415: //o zoom volta 1.05
           defaultCamZoom = 1.05;
-				case 440:
+				case 440: //turno do bf aee 1.32
 					defaultCamZoom = 1.32;
-				case 444:
+				case 444: //o zoom volta 1.05
 					defaultCamZoom = 1.05;
-				case 476:
+				case 476: 
           defaultCamZoom = 1.27;
         case 478:
           defaultCamZoom = 1.69;
