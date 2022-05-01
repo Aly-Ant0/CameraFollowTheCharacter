@@ -2273,18 +2273,18 @@ class PlayState extends MusicBeatState
 						var animToPlay:String = '';
 						switch (Math.abs(daNote.noteData))
 						{
-							case 0:
-								animToPlay = 'singLEFT';
-								camFollow.x -= 30;
-							case 1:
-								animToPlay = 'singDOWN';
-								camFollow.y += 30;
-							case 2:
-								animToPlay = 'singUP';
-								camFollow.y -= 30;
-							case 3:
-								animToPlay = 'singRIGHT';
-								camFollow.x += 30;
+					case 0:
+						animToPlay = 'singLEFT';
+            FlxTween.tween(FlxG.camera, {x: -30}, 0.5, {ease: FlxEase.quadInOut});
+					case 1:
+						animToPlay = 'singDOWN';
+            FlxTween.tween(FlxG.camera, {y: 30}, 0.5, {ease: FlxEase.quadInOut});
+					case 2:
+						animToPlay = 'singUP';
+            FlxTween.tween(FlxG.camera, {y: -30}, 0.5, {ease: FlxEase.elasticInOut});
+					case 3:
+						animToPlay = 'singRIGHT';
+            FlxTween.tween(FlxG.camera, {x: 30}, 0.5, {ease: FlxEase.quadInOut});
 						}
 						if(daNote.noteType == 'GF Sing') {
 							gf.playAnim(animToPlay + altAnim, true);
