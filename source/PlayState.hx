@@ -2275,16 +2275,16 @@ class PlayState extends MusicBeatState
 						{
 					case 0:
 						animToPlay = 'singLEFT';
-            FlxTween.tween(camFollow, {x: -20}, 3.0, {ease: FlxEase.linear});
+            FlxTween.tween(camFollow, {x: -20}, 0.3, {ease: FlxEase.linear});
 					case 1:
 						animToPlay = 'singDOWN';
-            FlxTween.tween(camFollow, {y: 20}, 3.0, {ease: FlxEase.linear});
+            FlxTween.tween(camFollow, {y: 20}, 0.3, {ease: FlxEase.linear});
 					case 2:
 						animToPlay = 'singUP';
-            FlxTween.tween(camFollow, {y: -20}, 3.0, {ease: FlxEase.linear});
+            FlxTween.tween(camFollow, {y: -20}, 0.3, {ease: FlxEase.linear});
 					case 3:
 						animToPlay = 'singRIGHT';
-            FlxTween.tween(camFollow, {x: 20}, 3.0, {ease: FlxEase.linear});
+            FlxTween.tween(camFollow, {x: 20}, 0.3, {ease: FlxEase.linear});
 						}
 						if(daNote.noteType == 'GF Sing') {
 							gf.playAnim(animToPlay + altAnim, true);
@@ -3511,16 +3511,16 @@ class PlayState extends MusicBeatState
 				{
 					case 0:
 						animToPlay = 'singLEFT';
-            FlxTween.tween(camFollow, {x: -20}, 3.0, {ease: FlxEase.linear});
+            FlxTween.tween(camFollow, {x: -20}, 0.3, {ease: FlxEase.linear});
 					case 1:
 						animToPlay = 'singDOWN';
-            FlxTween.tween(camFollow, {y: 20}, 3.0, {ease: FlxEase.linear});
+            FlxTween.tween(camFollow, {y: 20}, 0.3, {ease: FlxEase.linear});
 					case 2:
 						animToPlay = 'singUP';
-            FlxTween.tween(camFollow, {y: -20}, 3.0, {ease: FlxEase.linear});
+            FlxTween.tween(camFollow, {y: -20}, 0.3, {ease: FlxEase.linear});
 					case 3:
 						animToPlay = 'singRIGHT';
-            FlxTween.tween(camFollow, {x: 20}, 3.0, {ease: FlxEase.linear});
+            FlxTween.tween(camFollow, {x: 20}, 0.3, {ease: FlxEase.linear});
 				}
 
 				if(note.noteType == 'GF Sing') {
