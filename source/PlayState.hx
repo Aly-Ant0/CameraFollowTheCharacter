@@ -3805,9 +3805,9 @@ class PlayState extends MusicBeatState
 			switch (curStep)
 			{
         case 412: //turno do boca na pika - zoom 1.27
-            FlxTween.tween(FlxG.camera, {zoom: 1.27}, 0.5, {ease: FlxEase.elasticInOut});
+            FlxTween.tween(FlxG.camera, {zoom: 1.27}, 0.5, {ease: FlxEase.quadInOut});
         case 414:  //turno da pika dnv 1.69
-            FlxTween.tween(FlxG.camera, {zoom: 1.69}, 0.5, {ease: FlxEase.elasticInOut});
+            FlxTween.tween(FlxG.camera, {zoom: 1.69}, 0.5, {ease: FlxEase.quadInOut});
         case 415: //o zoom volta 1.05
           defaultCamZoom = 1.05;
 				case 440: //turno do bf aee 1.32
