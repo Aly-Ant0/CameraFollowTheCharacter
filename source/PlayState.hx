@@ -3511,16 +3511,16 @@ class PlayState extends MusicBeatState
 				{
 					case 0:
 						animToPlay = 'singLEFT';
-						camFollow.x -= 30;
+            FlxTween.tween(FlxG.camera, {x: -30}, 0.5, {ease: FlxEase.quadInOut});
 					case 1:
 						animToPlay = 'singDOWN';
-						camFollow.y += 30;
+            FlxTween.tween(FlxG.camera, {y: 30}, 0.5, {ease: FlxEase.quadInOut});
 					case 2:
 						animToPlay = 'singUP';
-						camFollow.y -= 30;
+            FlxTween.tween(FlxG.camera, {y: -30}, 0.5, {ease: FlxEase.elasticInOut});
 					case 3:
 						animToPlay = 'singRIGHT';
-						camFollow.x += 30;
+            FlxTween.tween(FlxG.camera, {x: 30}, 0.5, {ease: FlxEase.quadInOut});
 				}
 
 				if(note.noteType == 'GF Sing') {
