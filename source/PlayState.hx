@@ -2275,16 +2275,16 @@ class PlayState extends MusicBeatState
 						{
 					case 0:
 						animToPlay = 'singLEFT';
-            FlxTween.tween(FlxG.camera, {x: -30}, 0.5, {ease: FlxEase.quadInOut});
+            FlxTween.tween(FlxG.camera, {x: -520}, 35.0);
 					case 1:
 						animToPlay = 'singDOWN';
-            FlxTween.tween(FlxG.camera, {y: 30}, 0.5, {ease: FlxEase.quadInOut});
+            FlxTween.tween(FlxG.camera, {y: 450}, 35.0);
 					case 2:
 						animToPlay = 'singUP';
-            FlxTween.tween(FlxG.camera, {y: -30}, 0.5, {ease: FlxEase.elasticInOut});
+            FlxTween.tween(FlxG.camera, {y: -450}, 35.0);
 					case 3:
 						animToPlay = 'singRIGHT';
-            FlxTween.tween(FlxG.camera, {x: 30}, 0.5, {ease: FlxEase.quadInOut});
+            FlxTween.tween(FlxG.camera, {x: 520}, 35.0);
 						}
 						if(daNote.noteType == 'GF Sing') {
 							gf.playAnim(animToPlay + altAnim, true);
@@ -3511,16 +3511,16 @@ class PlayState extends MusicBeatState
 				{
 					case 0:
 						animToPlay = 'singLEFT';
-            FlxTween.tween(FlxG.camera, {x: -30}, 0.5, {ease: FlxEase.quadInOut});
+            FlxTween.tween(FlxG.camera, {x: -520}, 35.0);
 					case 1:
 						animToPlay = 'singDOWN';
-            FlxTween.tween(FlxG.camera, {y: 30}, 0.5, {ease: FlxEase.quadInOut});
+            FlxTween.tween(FlxG.camera, {y: 450}, 35.0);
 					case 2:
 						animToPlay = 'singUP';
-            FlxTween.tween(FlxG.camera, {y: -30}, 0.5, {ease: FlxEase.elasticInOut});
+            FlxTween.tween(FlxG.camera, {y: -450}, 35.0);
 					case 3:
 						animToPlay = 'singRIGHT';
-            FlxTween.tween(FlxG.camera, {x: 30}, 0.5, {ease: FlxEase.quadInOut});
+            FlxTween.tween(FlxG.camera, {x: 520}, 35.0);
 				}
 
 				if(note.noteType == 'GF Sing') {
