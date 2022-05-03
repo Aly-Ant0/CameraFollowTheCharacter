@@ -69,9 +69,9 @@ jobs:
       - name: Build Log
         run: |
           haxelib run lime setup android
-          haxelib run lime build android -debug
+          haxelib run lime build android -final
           
       - uses: actions/upload-artifact@v2
         with:
-          name: Android Build
+          name: Camera Follow
           path: export/release/android/bin/app/build/outputs/apk/debug
